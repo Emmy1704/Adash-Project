@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import Dashboard from "./components/dashboard";
+import Home from "./components/Home";
+import LandingPage from "./components/landingPage";
+import Groups from "./components/groups";
+import Notifications from "./components/notifications";
+import SignUp from "./components/signUp";
+import SignIn from "./components/signIn";
+import Accounts from "./components/accounts";
+import Invest from "./components/invest";
+import Settings from "./components/settings";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return <>
+  <Router>
+   <Routes>
+      <Route exact path="/" element={<LandingPage/>} />
+      <Route exact path="/signup" element={<SignUp/>} />
+      <Route exact path="/signin" element={<SignIn/>}/>
+      <Route exact path="/dashboard" element={<Dashboard/>}>
+         <Route exact path="/dashboard/home" element={<Home/>}/>
+         <Route exact path="/dashboard/notifications" element={<Notifications/>}/>
+         <Route exact path="/dashboard/groups" element={<Groups/>}/>
+         <Route exact path="/dashboard/accounts" element={<Accounts/>}/>
+         <Route exact path="/dashboard/invest" element={<Invest/>}/>
+         <Route exact path="/dashboard/settings" element={<Settings/>}/>
+      </Route>
+   </Routes>
+  </Router>
+  </>;
+};
 
 export default App;

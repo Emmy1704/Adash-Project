@@ -1,0 +1,493 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
+
+
+.home{
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+
+/* sidebar */
+.sidebar{
+   position: fixed;
+   height: 100%;
+   background-color: #ADAFF1;
+   display: flex;
+   flex-direction: column;
+   width: 337.76px;
+   padding: 30px;
+}
+
+.sidebar .top {
+   display: flex;
+}
+.sidebar h2 {
+   font-size: 1.2rem;
+   font-weight: 200;
+}
+.sidebar h3 {
+   font-weight: 1.3rem;
+   font-weight: 300;
+   margin: 0;
+}
+
+#logo {
+   width: 60px;
+   height: 60px;
+}
+
+.sidebar button {
+   width: fit-content;
+   color: black;
+   display: flex;
+   font-size: 0.9rem;
+   background-color: #ADAFF1;
+}
+
+.sidebar button svg {
+   margin-right: 10px;
+}
+
+.sidebar .buttons {
+   width: 100%;
+   height: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-bottom: 100px;
+   margin-top:30px ;
+}
+
+.sidebar a {
+   text-decoration: none;
+}
+
+#logout {
+   background-color: white;
+}
+/* sidebar */
+/* body */
+.home .body {
+   grid-column: 3 / 9;
+   padding: 30px;
+}
+
+.body .top {
+   height: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.home .body .top h1 {
+   margin: 0;
+}
+
+.home .body .calender {
+   background-color: #ADAFF1;
+   width: 150px;
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 5px;
+   border-radius: 10px;
+}
+
+.home .main .balance {
+   background-color: #ADAFF1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width: 300px;
+   height: 300px;
+   padding: 30px;
+   border-radius: 200px;
+}
+.balance h2 {
+   font-size: 1rem;
+   font-weight: 100;
+   margin: 0
+}
+.balance h3 {
+   font-size: 2rem;
+}
+.balance section {
+   background-color: white;
+   padding: 10px;
+   border-radius: 10px;
+}
+span {
+   font-size: 1rem;
+}
+
+.home .body .main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main .add div {
+   display: flex;
+   justify-content: space-around;
+   margin: 30px 0;
+}
+
+.main .add section {
+   border: 1px solid black;
+   border-radius: 50px;
+   padding: 15px;
+   width: fit-content;
+}
+
+.main .others {
+   width: 100%;
+   height: 400px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 30px;
+   margin: 40px 0;
+}
+
+.main .others div {
+   background-color: #ADAFF1;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   border: 1px solid #000;
+   padding: 20px;
+}
+.main .others div svg {
+   float: right;
+}
+
+.home .others .flex {
+   grid-column: 1 / 2;
+   grid-row: 1 /2;
+}
+.home .others .fixed {
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+}
+.home .others .bonus {
+   grid-column: 3 / 4;
+   grid-row: 1 / 2;
+}
+.home .others .wallet {
+   grid-column: 1 / 2;
+   grid-row: 2 / 3;
+}
+.home .others .investmente {
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+}
+
+.main .refer {
+   border: 1px solid black;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.main .refer .top {
+   width: 100%;
+   height: 20%;
+   background-color: grey;
+   display: flex;
+   flex-direction: column;
+   padding: 10px
+}
+.refer .top h3 {
+   margin: 0;
+}
+
+.refer .link {
+   border: 1px solid black;
+   width: 80%;
+   margin: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 30px;
+   padding-left: 20px;
+}
+.refer .link section{
+padding: 10px;
+}
+
+.refer .icons {
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   margin: 30px 0;
+}
+/* body */
+/* Notifications */
+.noti {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+
+.noti .body {
+   grid-column: 3 / 6;
+   height: 100%;
+   background-color: white;
+   border-radius: 40px;
+   padding: 20px;
+}
+
+.noti h2 {
+   font-size: 1.2rem;
+}
+.noti h3 {
+   font-size: 1rem;
+   font-weight: 200;
+}
+.noti h4 {
+   font-size: 0.9rem;
+   font-weight: 200;
+   margin: 10px
+}
+.noti a {
+   text-decoration: none;
+   color: #ADAFF1;
+   font-size: 0.8rem
+}
+/* Notifications */
+/* groups */
+.group {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+
+.group .body {
+   grid-column: 3 / 8;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-gap: 30px;
+   padding: 20px
+}
+
+.group .balance {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+   background-color: #300444;
+   border-radius: 40px;
+   padding: 20px;
+   color: white;
+}
+.group .body button {
+   color: #000
+}
+
+.group .join {
+   grid-column: 1 / 2;
+   grid-row: 2 / 4;
+   background-color: #ECFFFA;
+   border-radius: 40px;
+   padding: 20px;
+}
+
+.group .mygroups {
+   grid-column: 2 / 3;
+   grid-row: 3 / 4;
+   background-color: #ECFFFA;
+   border-radius: 40px;
+   padding: 20px;
+}
+
+.group .mygroups section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between
+}
+.group .mygroups h2 {
+   margin: 5px 0;
+   font-size: 1rem;
+}
+.group .mygroups section h3 {
+   margin: 5px 0;
+   font-size: 0.9rem;
+}
+.group .mygroups section p {
+   margin: 5px 0;
+}
+
+.group .create {
+   grid-column: 2 / 3;
+   grid-row: 1 / 3;
+   background-color: #ECFFFA;
+   border-radius: 40px;
+   padding: 20px
+}
+
+.group .create h2 {
+   margin: 10px;
+}
+
+.group form {
+   display: flex;grid-row: 3 / 6;
+   flex-direction: column;
+}
+
+input {
+   margin-bottom: 10px;
+}
+/* groups */
+/* accounts */
+.accounts {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr
+}
+
+.accounts .body, .investment .body, .settings .body {
+   grid-column: 3 / 9;
+   height: 100%;
+}
+
+.accounts h2{
+   grid-column: 1 / 9;
+   height: 10%;
+   margin: 0;
+   padding: 10px;
+}
+
+.accounts .inside {
+   width: 70%;
+   height: 90%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 30px;
+   padding: 20px;
+}
+
+.accounts .inside .balance {
+   grid-column: 1 / 2;
+   height: 150px;
+}
+.accounts .inside .flex {
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+}
+
+.accounts .inside div{
+   background-color: #ECFFFA;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around
+}
+/* accounts*/
+/* invest */
+.investment {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+
+.investment #top, .settings #top {
+   grid-column: 1 / 9;
+   height: 10%;
+   margin: 0;
+   padding: 10px;
+}
+
+.investment .inside {
+   width: 70%;
+   height: 90%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-gap: 30px;
+   padding: 20px;
+}
+
+.investment .inside div{
+   background-color: #ECFFFA;
+   padding: 20px;
+}
+.investment .inside h3 {
+   margin: 0;
+   font-size: 0.8rem;
+   font-weight: 200;
+}
+.investment .inside h2 {
+   margin: 5px 0;
+   color: #300444;
+   font-size: 1.3rem;
+   font-weight: 400;
+}
+
+.investment .inside .expect {
+   grid-column: 1 / 3;
+}
+.inside svg {
+   float: right;
+}
+.investment .inside .setup {
+   grid-column: 1 / 3;
+}
+.setup button, .start button {
+   background-color: #300444
+}
+.investment .inside .start {
+   grid-column: 1 / 4;
+   grid-row: 3 / 5;
+}
+.inside .start .top {
+   height: 20%;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+   border-bottom: 1px solid black;
+}
+.inside .start .top .sps {
+   border-bottom: 2px solid #300444
+}
+.inside .start .main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   height: 80%;
+}
+/* invest */
+/* settings */
+.settings {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+/* settings */
+
