@@ -3,7 +3,6 @@ import "../style.css";
 import logo from "../Images/LOGO.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
 
 const Head = () => {
     const  [hamburgerOpen, setHamburgerOpen] = useState(false);

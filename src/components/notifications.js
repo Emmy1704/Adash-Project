@@ -15,32 +15,32 @@ const Notifications = () => {
             <ul>
               <li>
                 <h4>Refer 10 people to get 500</h4>
-                <a href="#">click to get started</a>
+                <a href="/">click to get started</a>
               </li>
               <li>
                 <h4>
                   Guess what Adash is giving room for its customers to get
                   access to their fix account incase of emergency.
                 </h4>
-                <a href="#">Click for more details</a>
+                <a href="/">Click for more details</a>
               </li>
               <li>
                 <h4>you can download adash from your android or ios.</h4>
-                <a href="#">Click for more details</a>
+                <a href="/">Click for more details</a>
               </li>
               <li>
                 <h4>Newer version of the app is available.</h4>
-                <a href="#">
+                <a href="/">
                   Click to install or upgrade to the latest version
                 </a>
               </li>
               <li>
                 <h4>kungya admin sent a message to the group</h4>
-                <a href="#">click to open</a>
+                <a href="/">click to open</a>
               </li>
               <li>
                 <h4>You can now collect loan through the adash app</h4>
-                <a href="#">click to get started</a>
+                <a href="/">click to get started</a>
               </li>
             </ul>
           </div>

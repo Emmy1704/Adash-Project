@@ -20,7 +20,7 @@ const Second = () => {
               save your funds with other people for a duration of time either
               daily, weekly or monthly.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="/" className="btn btn-primary">
               Adash groups
             </a>
           </div>
@@ -32,7 +32,7 @@ const Second = () => {
               having a fixed account where you can lock your money without
               having access to it until the time frame elapse.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="/" className="btn btn-primary">
               Adash fixed account
             </a>
           </div>
@@ -43,7 +43,7 @@ const Second = () => {
             <p className="card-text direct">
               allows you to save, transfer and receive funds at anytime.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="/" className="btn btn-primary">
               Flex account
             </a>
           </div>
@@ -55,7 +55,7 @@ const Second = () => {
               gives you the ability to either save your money manually or
               automatically, as an individuals or as a team.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="/" className="btn btn-primary">
               Automated savings
             </a>
           </div>

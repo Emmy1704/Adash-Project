@@ -1,6 +1,5 @@
 import "../styles/dashboard.css";
 import Sidebar from "./sidebar";
-import invest from "../Images/invest2.jpg";
 
 const Invest = () => {
   return (

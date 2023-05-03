@@ -1,6 +1,5 @@
 import "../styles/dashboard.css";
-import { Outlet, Link, Route, Routes } from "react-router-dom";
-import Home from "./Home";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (

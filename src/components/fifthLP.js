@@ -73,10 +73,10 @@ const Fifth = () => {
             <a href="/Web-page/key-partners/index.html">
               <li>Our key partners</li>
             </a>
-            <a href="#">
+            <a href="/">
               <li>Contacts</li>
             </a>
-            <a href="#">
+            <a href="/">
               <li>Security</li>
             </a>
           </ul>
@@ -84,16 +84,16 @@ const Fifth = () => {
         <div className="support">
           <h1>Clients support</h1>
           <ul>
-            <a href="#">
+            <a href="/">
               <li>Who are our customers</li>
             </a>
-            <a href="#">
+            <a href="/">
               <li>Available opportunities</li>
             </a>
-            <a href="#">
+            <a href="/">
               <li>FAQs</li>
             </a>
-            <a href="#">
+            <a href="/">
               <li>Clients testimonials</li>
             </a>
           </ul>
