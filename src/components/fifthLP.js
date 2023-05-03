@@ -62,7 +62,7 @@ const Fifth = () => {
       </div>
       <div className="container-fluid dark">
         <div className="adash">
-          <h1>Adash</h1>
+          <h2>Adash</h2>
           <ul>
             <a href="/Web-page/About-us/index.html">
               <li>About us</li>
@@ -82,7 +82,7 @@ const Fifth = () => {
           </ul>
         </div>
         <div className="support">
-          <h1>Clients support</h1>
+          <h2>Clients support</h2>
           <ul>
             <a href="/">
               <li>Who are our customers</li>
