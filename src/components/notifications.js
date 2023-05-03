@@ -1,11 +1,25 @@
 import Sidebar from "./sidebar";
 import "../styles/dashboard.css";
+import "../styles/noti.css";
+import Hamburger from "hamburger-react";
+import { useState } from "react";
 
 const Notifications = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toogleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <>
       <div className="noti">
-        <Sidebar />
+        <div className="sidebarcontainer">
+          <div className="sidebarmenu" onClick={toogleHamburger}>
+            <Hamburger />
+          </div>
+          <Sidebar />
+        </div>
         <div className="body">
           <section className="heading">
             <h2>Notifications</h2>
@@ -45,6 +59,26 @@ const Notifications = () => {
             </ul>
           </div>
         </div>
+        <style js>{`
+            @media (max-width: 1000px) {
+               .sidebar {
+                  display: ${hamburgerOpen ? "inline" : "none"};
+                  width: ${hamburgerOpen ? "250px" : ""};
+                  height: 50vh;
+               }
+               .sidebar .buttons {
+                  height: 50%;
+               }
+               .sidebarmenu {
+                  width: ${hamburgerOpen ? "250px" : ""};
+                  background-color: ${hamburgerOpen ? "#ADAFF1" : ""}
+               }
+               .sidebarcontainer {
+                  width: fit-content;
+                  position: ${hamburgerOpen ? "fixed" : ""};
+               }
+            }
+        `}</style>
       </div>
     </>
   );
