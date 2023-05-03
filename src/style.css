@@ -430,7 +430,7 @@ h5 {
 
    .first{
       width: 100vw;
-      height: 600px;
+      height: fit-content;
    }
    .first .l-top {
       width: 100%;
@@ -457,7 +457,7 @@ h5 {
       display: flex;
       flex-direction: column;
       width: 100vw;
-      height: 540px;
+      height: fit-content;
    }
    .second .l-top {
       padding: 0 40px;
@@ -487,6 +487,7 @@ h5 {
    .fourth {
       flex-direction: column;
       margin-bottom: 60px;
+      height: fit-content;
    }
    .fourth .image {
       width: 80vw;
@@ -500,11 +501,13 @@ h5 {
    }
    .fifth .light {
       width: 100vw;
-      padding: 20px;
+      padding: 40px;
    }
    .fifth .dark {
       width: 100vw;
+      padding: 0 20px;
       padding-top: 40px;
+
    }
 }
 /* mobile */
