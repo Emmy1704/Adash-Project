@@ -11,7 +11,7 @@ const SignUp = () => {
 	const handleOnSubmit = async (e) => {
 		e.preventDefault();
 		let result = await fetch(
-		'http://localhost:5973/users/register', {
+		'https://concerned-pear-overcoat.cyclic.app//users/register', {
 			method: "post",
 			body: JSON.stringify({ name, email, password, username }),
 			headers: {
