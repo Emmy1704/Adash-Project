@@ -4,7 +4,7 @@
 
 #root {
    font-family: 'Libre Baskerville', serif;
-   font-size: 13px;
+   font-size: 15px;
 }
 
 /* head */
@@ -416,6 +416,10 @@ h5 {
 
 /* mobile */
 @media (max-width: 600px) {
+   #root {
+      font-size: 13px;
+   }
+
    .head .top .links {
       width: 130px;
    } 

@@ -1,4 +1,5 @@
 import "../styles/dashboard.css";
+import "../styles/account.css";
 import Sidebar from "./sidebar";
 
 const Accounts = () => {
