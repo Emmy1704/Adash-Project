@@ -8,7 +8,7 @@ import SignUp from "./components/signUp";
 import SignIn from "./components/signIn";
 import Accounts from "./components/accounts";
 import Invest from "./components/invest";
-import Settings from "./components/settings";
+import Profile from "./components/profile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -24,7 +24,8 @@ const App = () => {
          <Route exact path="/dashboard/groups" element={<Groups/>}/>
          <Route exact path="/dashboard/accounts" element={<Accounts/>}/>
          <Route exact path="/dashboard/invest" element={<Invest/>}/>
-         <Route exact path="/dashboard/settings" element={<Settings/>}/>
+         <Route exact path="/dashboard/profile" element={<Profile/>}/>
+         
       </Route>
    </Routes>
   </Router>

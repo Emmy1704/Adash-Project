@@ -1,0 +1,97 @@
+:root{
+   --bg--accent-color: #D9E1FA
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
+
+
+/* invest */
+.investment {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+
+.investment .body {
+   grid-column: 3 / 9;
+   height: 100%;
+   padding:0 30px;
+}
+
+.investment #top {
+   grid-column: 1 / 9;
+   height: 10%;
+   margin: 0;
+   padding: 10px;
+}
+
+.investment .inside {
+   width: 70%;
+   height: 90%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-gap: 30px;
+   padding: 20px;
+}
+
+.investment .inside div{
+   background-color: var(--bg--accent-color);
+   padding: 20px;
+}
+.investment .inside h3 {
+   margin: 0;
+   font-size: 0.8rem;
+   font-weight: 200;
+}
+.investment .inside h2 {
+   margin: 5px 0;
+   color: #300444;
+   font-size: 1.3rem;
+   font-weight: 400;
+}
+
+.investment .inside .expect {
+   grid-column: 1 / 3;
+}
+.inside svg {
+   float: right;
+}
+.investment .inside .setup {
+   grid-column: 1 / 3;
+}
+.setup button, .start button {
+   background-color: #300444
+}
+.investment .inside .start {
+   grid-column: 1 / 4;
+   grid-row: 3 / 5;
+}
+.inside .start .top {
+   height: 20%;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+   border-bottom: 1px solid black;
+}
+.inside .start .top .sps {
+   border-bottom: 2px solid #300444
+}
+.inside .start .main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   height: 80%;
+}
+/* invest */

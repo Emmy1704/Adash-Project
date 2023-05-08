@@ -30,6 +30,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .home .body .top h1 {
   margin: 0;
@@ -172,6 +173,24 @@ span {
   width: 100%;
   justify-content: space-around;
   margin: 30px 0;
+}
+
+.profileSpot{
+   width: 28%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.profileSpot img {
+   width: 50px;
+   height: 50px;
+   border-radius: 40px;
+   border: 1px solid black;
+}
+
+.profileSpot svg {
+   cursor: pointer;
 }
 /* body */
 

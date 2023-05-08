@@ -1,4 +1,5 @@
 import "../styles/dashboard.css";
+import "../styles/invest.css"
 import Sidebar from "./sidebar";
 
 const Invest = () => {

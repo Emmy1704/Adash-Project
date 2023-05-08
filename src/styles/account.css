@@ -20,9 +20,10 @@ body {
    grid-template-rows: 1fr
 }
 
-.accounts .body, .investment .body, .settings .body {
+.accounts .body {
    grid-column: 3 / 9;
    height: 100%;
+   padding:0 30px;
 }
 
 .accounts h2{
