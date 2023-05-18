@@ -9,9 +9,14 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+  const [error, setError]= useState(false)
   const navigate = useNavigate("");
   const handleOnSubmit = async (e) => {
     e.preventDefault();
+    if(password.length < 8){
+      setError(true)
+    }else{
+      setError(false)
     let result = await fetch(
       "https://concerned-pear-overcoat.cyclic.app//users/register",
       {
@@ -32,6 +37,7 @@ const SignUp = () => {
       setUsername("");
     }
     navigate("/dashboard/home");
+    }
   };
 // const [errors, setErrors] = useState<ZodIssue>([]);
 
@@ -122,6 +128,7 @@ const SignUp = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+          {error ? (<p>Password should be greater than 8 characters</p>) : ''}
           <Link to="/dashboard/home" onClick={handleOnSubmit}>
             <button>Sign Up</button>
           </Link>

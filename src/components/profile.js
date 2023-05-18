@@ -11,7 +11,7 @@ const Profile = () => {
           <div className="main">
             <div className="req">
               <div className="border">
-               <h2></h2>
+               <h2>Profile</h2>
               </div>
               <div className="profilePic">
                 <img src={profilePic} alt="" />
