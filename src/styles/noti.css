@@ -1,6 +1,3 @@
-:root{
-   --bg-accent-color: #D9E1FA;
-}
 
 * {
    box-sizing: border-box;
@@ -21,7 +18,7 @@ body {
 }
 
 .noti .body {
-   grid-column: 3 / 6;
+   grid-column: 2 / 6;
    height: 100%;
    background-color: white;
    border-radius: 40px;

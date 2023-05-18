@@ -28,11 +28,11 @@
    height: 100%;
    width: 100%;
    display: flex;
-   border: 1px solid #aaa6a6;
+   border: 1px solid #062863;
 }
 
 .profile .body .main img {
-   border: 1px solid #aaa6a6;
+   border: 2px solid #062863;
    border-radius: 60%;
    width: 60%;
    height: 70%;
@@ -91,7 +91,7 @@
 }
 
 .profile .body button{
-   background-color: #aaa6a6;
+   background-color: #062863;
    padding: 2px 5px;
    font-size: 0.7rem;
 }

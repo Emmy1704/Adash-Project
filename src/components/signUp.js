@@ -1,59 +1,86 @@
 import "../styles/signUp.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from 'react'
+import { useState } from "react";
+// import { validateForm } from "../components/validate"; 
+// import { string } from "zod";
 
-const SignUp = () => { 
-	const [name, setName] = useState("");
-	const [email, setEmail] = useState("");
-   const [password, setPassword] = useState("");
-   const [username, setUsername] = useState("");
-   const navigate = useNavigate("");
-	const handleOnSubmit = async (e) => {
-		e.preventDefault();
-		let result = await fetch(
-		'https://concerned-pear-overcoat.cyclic.app//users/register', {
-			method: "post",
-			body: JSON.stringify({ name, email, password, username }),
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		})
-		result = await result.json();
-		console.warn(result);
-		if (result) {
-			alert("Data saved succesfully");
-			setEmail("");
-			setName("");
-         setPassword("");
-         setUsername("");
-		}
-      navigate('/dashboard/home');
-	}
-	// return (
-	// 	<>
-	// 		<h1>This is React WebApp </h1>
-	// 		<form action="">
-	// 			<input type="text" placeholder="name"
-	// 			value={name} onChange={(e) => setName(e.target.value)} />
-	// 			<input type="email" placeholder="email"
-	// 			value={email} onChange={(e) => setEmail(e.target.value)} />
-	// 			<input type="password" placeholder="password"
-	// 			value={password} onChange={(e) => setPassword(e.target.value)} />
-	// 			<input type="username" placeholder="username"
-	// 			value={username} onChange={(e) => setUsername(e.target.value)} />
-	// 			<Link to='/dashboard/home' onClick={handleOnSubmit}>
-   //          <button type="submit"
-	// 			>submit</button>
-   //          </Link>
-	// 		</form>
+const SignUp = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+  const navigate = useNavigate("");
+  const handleOnSubmit = async (e) => {
+    e.preventDefault();
+    let result = await fetch(
+      "https://concerned-pear-overcoat.cyclic.app//users/register",
+      {
+        method: "post",
+        body: JSON.stringify({ name, email, password, username }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    result = await result.json();
+    console.warn(result);
+    if (result) {
+      alert("Data saved succesfully");
+      setEmail("");
+      setName("");
+      setPassword("");
+      setUsername("");
+    }
+    navigate("/dashboard/home");
+  };
+// const [errors, setErrors] = useState<ZodIssue>([]);
 
-	// 	</>
-	// );
+// const getError = (path = string) => {
+//     const error = errors.find((error) => error.path === path)
+
+//     return error ? (
+//       <small className="text-red-500">{error?.message}</small>
+//     ) : null
+//   }
+//   const submit = () => {
+//     const formData = validateForm.safeParse(data);
+
+//     if (!formData.success) {
+//       const { issues } = formData.error;
+
+//       setErrors(issues);
+//     }
+//     else if (formData.success) {
+//       handleOnSubmit()
+//     } else {
+//          setErrors([]);
+//     }
+//   };
+  // return (
+  // 	<>
+  // 		<h1>This is React WebApp </h1>
+  // 		<form action="">
+  // 			<input type="text" placeholder="name"
+  // 			value={name} onChange={(e) => setName(e.target.value)} />
+  // 			<input type="email" placeholder="email"
+  // 			value={email} onChange={(e) => setEmail(e.target.value)} />
+  // 			<input type="password" placeholder="password"
+  // 			value={password} onChange={(e) => setPassword(e.target.value)} />
+  // 			<input type="username" placeholder="username"
+  // 			value={username} onChange={(e) => setUsername(e.target.value)} />
+  // 			<Link to='/dashboard/home' onClick={handleOnSubmit}>
+  //          <button type="submit"
+  // 			>submit</button>
+  //          </Link>
+  // 		</form>
+
+  // 	</>
+  // );
   return (
     <>
       <div className="content">
         <form className="form">
-         <Link to={"/"}>
+          <Link to={"/"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -67,18 +94,37 @@ const SignUp = () => {
           </Link>
           <h1>SIGN UP</h1>
           <label htmlFor="fullname">Fullname</label>
-          <input type="text" placeholder="name"
-				value={name} onChange={(e) => setName(e.target.value)} />
+          <input
+            type="text"
+            placeholder="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <label htmlFor="username">Username</label>
-          <input type="username" placeholder="username"
-				value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input
+            type="text"
+            placeholder="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
           <label htmlFor="email">Email</label>
-          <input type="email" placeholder="email"
-				value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input
+            type="email"
+            placeholder="email"
+            name="my_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <label htmlFor="password">Password</label>
-          <input type="password" placeholder="password"
-				value={password} onChange={(e) => setPassword(e.target.value)} />
-          <Link to='/dashboard/home' onClick={handleOnSubmit}><button>Sign Up</button></Link>
+          <input
+            type="password"
+            placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <Link to="/dashboard/home" onClick={handleOnSubmit}>
+            <button>Sign Up</button>
+          </Link>
           <p>
             already have an account? <Link to={"/signin"}>log in</Link>
           </p>

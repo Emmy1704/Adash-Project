@@ -17,7 +17,7 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="black"
+                fill="currentColor"
                 className="bi bi-house-fill"
                 viewBox="0 0 16 16"
               >
@@ -33,7 +33,7 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="black"
+                fill="currentColor"
                 className="bi bi-bell-fill"
                 viewBox="0 0 16 16"
               >
@@ -48,7 +48,7 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="black"
+                fill="currentColor"
                 className="bi bi-people-fill"
                 viewBox="0 0 16 16"
               >
@@ -63,7 +63,7 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="black"
+                fill="currentColor"
                 className="bi bi-wallet-fill"
                 viewBox="0 0 16 16"
               >
@@ -79,7 +79,7 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="black"
+                fill="currentColor"
                 className="bi bi-graph-up-arrow"
                 viewBox="0 0 16 16"
               >
@@ -117,7 +117,7 @@ const Sidebar = () => {
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
-              fill="black"
+              fill="currentColor"
               className="bi bi-box-arrow-left"
               viewBox="0 0 16 16"
             >

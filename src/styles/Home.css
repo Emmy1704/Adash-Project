@@ -1,5 +1,5 @@
 :root{
-   --bg-accent-color: #D9E1FA;
+   --bg-accent-color: #0b1b4e;
 }
 
 * {
@@ -17,11 +17,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+
 }
 
 /* body */
 .home .body {
-  grid-column: 3 / 9;
+  grid-column: 2 / 9;
   padding: 30px;
 }
 
@@ -38,6 +39,7 @@ body {
 
 .home .body .calender {
   background-color: var(--bg-accent-color);
+  color: white;
   width: 150px;
   height: 40px;
   display: flex;
@@ -48,7 +50,7 @@ body {
 }
 
 .home .main .balance {
-  background-color: var(--bg-accent-color);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -57,6 +59,7 @@ body {
   height: 300px;
   padding: 30px;
   border-radius: 200px;
+  border: 3px solid #062863;
 }
 .balance h2 {
   font-size: 1rem;
@@ -67,7 +70,8 @@ body {
   font-size: 2rem;
 }
 .balance section {
-  background-color: white;
+  background-color: var(--bg-accent-color);
+  color: white;
   padding: 10px;
   border-radius: 10px;
 }
@@ -88,7 +92,8 @@ span {
 }
 
 .main .add section {
-  border: 1px solid black;
+  background-color: var(--bg-accent-color);
+  color: white;
   border-radius: 50px;
   padding: 15px;
   width: fit-content;
@@ -105,35 +110,47 @@ span {
 }
 
 .main .others div {
-  background-color: var(--bg-accent-color);
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border: 1px solid #000;
   padding: 20px;
+  color: white;
 }
 .main .others div svg {
   float: right;
 }
 
+.main .others div h2 {
+   margin-bottom: 20px;
+}
+.main .others div h3 {
+   font-size: 2rem;
+}
+
 .home .others .flex {
   grid-column: 1 / 2;
   grid-row: 1 /2;
+  background-color: #520f70;
 }
 .home .others .fixed {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  background-color: #102770;
 }
 .home .others .bonus {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+  background-color: #0b1b4e;
 }
 .home .others .wallet {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background-color: #110c37;
 }
 .home .others .investmente {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  background-color: #410f70;
 }
 
 .main .refer {
@@ -146,7 +163,7 @@ span {
 .main .refer .top {
   width: 100%;
   height: 20%;
-  background-color: grey;
+  background-color: #1e36cf;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -186,7 +203,7 @@ span {
    width: 50px;
    height: 50px;
    border-radius: 40px;
-   border: 1px solid black;
+   border: 2px solid #062863;
 }
 
 .profileSpot svg {

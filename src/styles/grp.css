@@ -1,0 +1,171 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
+
+:root {
+   --balablu: #030816;
+   --townhall: #102770;
+}
+
+.grpOne {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+
+.grpOne .body {
+   grid-column: 3 / 9;
+   height: 100%;
+   padding: 30px;
+   padding-right: 100px;
+
+}
+
+.grpOne .mainContent {
+   border: 1px solid var(--balablu);
+   width: 100%;
+   height: 90vh;
+}
+.ps {
+   display: none;
+   width: 100%;
+   height: 100%;
+}
+
+.mainContent .one{
+   background-color: var(--townhall);
+   padding: 10px;
+   height: 8%;
+   text-align: center;
+}
+
+.mainContent .two {
+   overflow-y: scroll;
+   height: 74%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 20px;
+}
+.mainContent section {
+   background-color: var(--townhall);
+   width: 60%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 70px;
+   margin-bottom: 20px;
+   padding: 15px 0;
+   border-radius: 10px;
+}
+
+.mainContent .three {
+   height: 8%;
+   display: flex;
+   justify-content: space-around;
+   padding: 5px 0;
+   background-color: var(--townhall);
+}
+.mainContent .three button {
+   background-color: var(--balablu);
+}
+
+#psb, #mpb, #aub {
+   background-color: white;
+   color: var(--balablu);
+}
+
+.mainContent .four {
+   background-color: var(--townhall);
+   border-top: 1px solid black;
+   height: 10%;
+}
+
+.mp {
+   display: none;
+   width: 100%;
+   height: 100%;
+}
+
+.mp .money {
+   color: rgb(2, 94, 2);
+   font-weight: 700;
+}
+
+.au {
+   width: 100%;
+   height: 100%;
+}
+
+.au .two {
+   overflow: unset;
+   padding-top: 0;
+}
+
+.au .up {
+   height: 30%;
+   width: 100%;
+   padding: 0 20px;
+   border-bottom: 1px solid black;
+}
+
+.au .addUser {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 55%;
+   margin-top: 20px;
+}
+
+.au .addUser input {
+   margin-bottom: 0;
+   width: 80%;
+}
+
+.au .addUser button {
+   background-color: var(--balablu);
+}
+
+.au .down {
+   width: 100%;
+   height: 70%;
+   padding: 20px;
+}
+
+.au .down .names {
+   width: 100%;
+   height: 95%;
+   overflow-y: scroll;
+}
+
+.au .down section {
+   width: 100%;
+   justify-content: space-between;
+   padding: 0 25px;
+   background-color: #D9E1FA;
+}
+
+.au .down section div {
+   display: flex;
+   justify-content: space-between;
+   width: 20%;
+}
+
+#dec {
+   background-color: rgb(161, 4, 4);
+}
+#acc {
+   background-color: rgb(1, 94, 1);
+}
+
+.mainContent .two section{
+   background-color: #D9E1FA;
+}
+

@@ -1,7 +1,45 @@
 import "../styles/signUp.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import swal from "sweetalert";
 
 const SignIn = () => {
+  async function loginUser(credentials) {
+    return fetch("https://concerned-pear-overcoat.cyclic.app//users/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(credentials),
+    }).then((data) => data.json());
+  }
+
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
+  const navigate = useNavigate("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await loginUser({
+      username,
+      password,
+    });
+    if ("accessToken" in response) {
+      swal("Success", response.message, "success", {
+        buttons: false,
+        timer: 2000,
+      }).then((value) => {
+        localStorage.setItem("accessToken", response["accessToken"]);
+        localStorage.setItem("user", JSON.stringify(response["user"]));
+        window.location.href = "/profile";
+      });
+      navigate("/dashboard/home");
+    } else {
+      swal("Failed", response.message, "error");
+      console.log("working");
+    }
+    
+  };
   return (
     <>
       <div className="content">
@@ -20,10 +58,20 @@ const SignIn = () => {
           </Link>
           <h1>LOG IN</h1>
           <label htmlFor="username">Username</label>
-          <input type="text" name="username" />
+          <input
+            type="text"
+            name="username"
+            onChange={(e) => setUserName(e.target.value)}
+          />
           <label htmlFor="password">Password</label>
-          <input type="password" name="password" />
-          <Link to={"/dashboard/home"}><button>Log In</button></Link>
+          <input
+            type="password"
+            name="password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <Link to={"/dashboard/home"} >
+            <button>Log In</button>
+          </Link>
           <p>
             don't have an account? <Link to={"/signup"}>sign up</Link>
           </p>

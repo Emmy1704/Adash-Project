@@ -11,7 +11,7 @@ const Home = () => {
   const toogleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
-
+//   const user = JSON.parse(localStorage.getItem("user"));
   return (
     <>
       <div className="home">
@@ -23,7 +23,7 @@ const Home = () => {
         </div>
         <div className="body">
           <div className="top">
-            <h1>Hi John Doe!</h1>
+            <h1>Hi {/*{user.username}*/}</h1>
             <div className="profileSpot">
               <img src={profilePic} alt="" />
               <div className="calender">
@@ -160,7 +160,7 @@ const Home = () => {
                 >
                   <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                 </svg>
-                <h2>Investmnt</h2>
+                <h2>Investment</h2>
                 <h3>
                   &#8358; 150,000.<span>00</span>
                 </h3>
