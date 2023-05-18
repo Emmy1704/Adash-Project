@@ -3,7 +3,6 @@
 }
 
 .content {
-   background: linear-gradient(89.83deg, #66ABF4 0.15%, #C8A8F8 99.86%);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -11,7 +10,18 @@
    width: 100%;
 }
 
+.content .background {
+   background-image: url(/src/Images/target-Saving-Plan.jpg);
+   background-size: cover;
+   opacity: 0.4;
+   width: 100%;
+   height: 100%;
+}
+
+
+
 .form {
+   position: absolute;
    display: flex;
    flex-direction: column;
    width: 450px;
@@ -44,7 +54,7 @@
 }
 
 .form button {
-   background-color: #ADAFF1;
+   background-color: var(--balablu);
    width: 60%;
    margin-left: 60px;
 }

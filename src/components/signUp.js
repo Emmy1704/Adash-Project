@@ -18,7 +18,7 @@ const SignUp = () => {
     }else{
       setError(false)
     let result = await fetch(
-      "https://concerned-pear-overcoat.cyclic.app//users/register",
+      "https://concerned-pear-overcoat.cyclic.app/users/register",
       {
         method: "post",
         body: JSON.stringify({ name, email, password, username }),
@@ -85,6 +85,7 @@ const SignUp = () => {
   return (
     <>
       <div className="content">
+         <div className="background"></div>
         <form className="form">
           <Link to={"/"}>
             <svg

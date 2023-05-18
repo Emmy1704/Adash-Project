@@ -1,6 +1,6 @@
 import "../styles/profile.css";
 import Sidebar from "./sidebar";
-import profilePic from "../Images/profile.png";
+import profilePic from "../Images/Screenshot_20220817-000213~2.png";
 
 const Profile = () => {
   return (
@@ -11,7 +11,7 @@ const Profile = () => {
           <div className="main">
             <div className="req">
               <div className="border">
-               <h2>Profile</h2>
+                <h2>Profile</h2>
               </div>
               <div className="profilePic">
                 <img src={profilePic} alt="" />
@@ -87,6 +87,67 @@ const Profile = () => {
             <div className="line"></div>
             <div className="res">
               <div className="border"></div>
+              <div className="settingsbody">
+                {/* <section>
+                  <h3>Dark Mode</h3>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </section> */}
+                <h3>Notification Settings</h3>
+                <div className="notisett">
+                  <div>
+                    <section>
+                      <input type="checkbox" name="" id="" />
+                      <p>Withdrawal activity</p>
+                    </section>
+                    <section>
+                      <input type="checkbox" name="" id="" />
+                      <p>Weekly report</p>
+                    </section>
+                    <section>
+                      <input type="checkbox" name="" id="" />
+                      <p>Payment success</p>
+                    </section>
+                  </div>
+                  <div>
+                    <section>
+                      <input type="checkbox" name="" id="" />
+                      <p>Password change</p>
+                    </section>
+                    <section>
+                      <input type="checkbox" name="" id="" />
+                      <p>Top up success</p>
+                    </section>
+                    <section>
+                      <input type="checkbox" name="" id="" />
+                      <p>Send money</p>
+                    </section>
+                  </div>
+                </div>
+                <h3>Change Password</h3>
+                <div className="passwordsett">
+                  <label htmlFor="Accpassword">Account password</label>
+                  <input
+                    type="password"
+                    name="Accpassword"
+                    id=""
+                    placeholder="*********"
+                  />
+                  <label htmlFor="tranpassword">Transaction password</label>
+                  <input
+                    type="password"
+                    name="tranpassword"
+                    id=""
+                    placeholder="*********"
+                  />
+                </div>
+                <div className="butons two">
+                  <button>Discard changes</button>
+                  <button>Save changes</button>
+                </div>
+              </div>
               <div className="border"></div>
             </div>
           </div>
@@ -97,11 +158,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
-/* <section>
-                <h3>Dark Mode</h3>
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider round"></span>
-                </label>
-              </section> */

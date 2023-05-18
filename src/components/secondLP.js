@@ -13,8 +13,7 @@ const Second = () => {
           <img src={invest} alt="" />
         </div>
         <div className="cards">
-         <div className="card box one ">
-          <div className="card-body">
+          <div className="card-body one">
             <h5 className="card-title">Cooperative savings</h5>
             <p className="card-text direct">
               save your funds with other people for a duration of time either
@@ -24,9 +23,7 @@ const Second = () => {
               Adash groups
             </a>
           </div>
-        </div>
-        <div className="card box two ">
-          <div className="card-body">
+          <div className="card-body two">
             <h5 className="card-title">Fixed savings</h5>
             <p className="card-text direct">
               having a fixed account where you can lock your money without
@@ -36,9 +33,7 @@ const Second = () => {
               Adash fixed account
             </a>
           </div>
-        </div>
-        <div className="card box three ">
-          <div className="card-body">
+          <div className="card-body three">
             <h5 className="card-title">Flex account</h5>
             <p className="card-text direct">
               allows you to save, transfer and receive funds at anytime.
@@ -47,9 +42,7 @@ const Second = () => {
               Flex account
             </a>
           </div>
-        </div>
-        <div className="card box four ">
-          <div className="card-body">
+          <div className="card-body four">
             <h5 className="card-title">Automated savings</h5>
             <p className="card-text direct ">
               gives you the ability to either save your money manually or
@@ -59,7 +52,6 @@ const Second = () => {
               Automated savings
             </a>
           </div>
-        </div>
         </div>
         <button className="btn btn-danger">Start saving</button>
       </div>

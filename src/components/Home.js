@@ -3,7 +3,7 @@ import "../styles/dashboard.css";
 import "../styles/Home.css";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
-import profilePic from "../Images/profile.png";
+import profilePic from "../Images/Screenshot_20220817-000213~2.png";
 
 const Home = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -23,7 +23,7 @@ const Home = () => {
         </div>
         <div className="body">
           <div className="top">
-            <h1>Hi {/*{user.username}*/}</h1>
+            <h1>Hi Paul Johnson</h1>
             <div className="profileSpot">
               <img src={profilePic} alt="" />
               <div className="calender">

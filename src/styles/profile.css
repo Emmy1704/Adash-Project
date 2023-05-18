@@ -44,7 +44,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: space-around;
-   height: 38%;
+   height: 40%;
    width: 90%;
 }
 
@@ -113,6 +113,31 @@
 
 .profile .accDetails svg  {
    cursor: pointer;
+}
+
+.settingsbody {
+   height: 90%;
+   padding: 20px;
+}
+
+.profile .notisett{
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 20px 0;
+}
+
+.notisett section {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.profile .passwordsett {
+   display: flex;
+   flex-direction: column;
+   height: 30%;
+   width: 50%;
 }
 
 

@@ -96,31 +96,27 @@ const Grpone = () => {
                   <p className="money">&#x20A6;5000</p>
                 </section>
                 <section>
-                  <p>February </p>
-                  <p className="money">&#x20A6;5000</p>
-                </section>
-                <section>
                   <p>March </p>
                   <p className="money">&#x20A6;5000</p>
                 </section>
                 <section>
-                  <p>April </p>
-                  <p className="money">&#x20A6;5000</p>
-                </section>
-                <section>
-                  <p>May </p>
-                  <p className="money">&#x20A6;5000</p>
-                </section>
-                <section>
-                  <p>June </p>
-                  <p className="money">&#x20A6;5000</p>
-                </section>
-                <section>
-                  <p>July </p>
+                  <p>june </p>
                   <p className="money">&#x20A6;5000</p>
                 </section>
                 <section>
                   <p>August </p>
+                  <p className="money">&#x20A6;5000</p>
+                </section>
+                <section>
+                  <p>September </p>
+                  <p className="money">&#x20A6;5000</p>
+                </section>
+                <section>
+                  <p>December </p>
+                  <p className="money">&#x20A6;5000</p>
+                </section>
+                <section>
+                  <p>February </p>
                   <p className="money">&#x20A6;5000</p>
                 </section>
               </div>

@@ -1,48 +1,49 @@
 import "../styles/signUp.css";
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import swal from "sweetalert";
+import { Link} from "react-router-dom";
+// import { useState } from "react";
+// import swal from "sweetalert";
 
 const SignIn = () => {
-  async function loginUser() {
-    return fetch("https://concerned-pear-overcoat.cyclic.app/users/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(username, password),
-    }).then((data) => data.json());
-  }
+//   async function loginUser() {
+//     return fetch("https://concerned-pear-overcoat.cyclic.app//users/login", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({username, password}),
+//     }).then((data) => data.json());
+//   }
 
-  const [username, setUserName] = useState();
-  const [password, setPassword] = useState();
-  const navigate = useNavigate("");
+//   const [username, setUserName] = useState();
+//   const [password, setPassword] = useState();
+//   const navigate = useNavigate("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await loginUser({
-      username,
-      password,
-    });
-    if ("accessToken" in response) {
-      swal("Success", response.message, "success", {
-        buttons: false,
-        timer: 2000,
-      }).then((value) => {
-        localStorage.setItem("accessToken", response["accessToken"]);
-        localStorage.setItem("user", JSON.stringify(response["user"]));
-        window.location.href = "/profile";
-      });
-      navigate("/dashboard/home");
-    } else {
-      swal("Failed", response.message, "error");
-      console.log("working");
-    }
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     const response = await loginUser({
+//       username,
+//       password,
+//     });
+//     if (response) {
+//       swal("Success", response.message, "success", {
+//         buttons: false,
+//         timer: 2000,
+//       }).then((value) => {
+//         localStorage.setItem("accessToken", response["accessToken"]);
+//         localStorage.setItem("user", JSON.stringify(response["user"]));
+//         window.location.href = "/profile";
+//       });
+//       navigate("/dashboard/home");
+//     } else {
+//       swal("success", response.message, "success");
+//       console.log(response.message);
+//     }
     
-  };
+//   };
   return (
     <>
       <div className="content">
+         <div className="background"></div>
         <form className="form">
           <Link to={"/"}>
             <svg
@@ -61,15 +62,15 @@ const SignIn = () => {
           <input
             type="text"
             name="username"
-            onChange={(e) => setUserName(e.target.value)}
+            // onChange={(e) => setUserName(e.target.value)}
           />
           <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
-            onChange={(e) => setPassword(e.target.value)}
+            // onChange={(e) => setPassword(e.target.value)}
           />
-          <Link to="/dashboard/home" onClick={handleSubmit} >
+          <Link to={"/dashboard/home"} >
             <button>Log In</button>
           </Link>
           <p>
